@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(167, 167, 167, 0.575) 12.5%, #fff 12.5%, #fff 37.5%);
+    background-size: 90px 90px;
+    background-position: 40px 40px;
+}
+
+#wrapper{
+    background-color: rgba(248, 248, 255, 0.918);
+    padding: 20px 50px;
+}
+
+.led-box{
+    display: flex;
+    height: 50px;
+    padding: 5px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.4);
+    transition: linear 0.1s;
+}
+@media screen and (min-width: 600px){
+    .led-box:hover{
+        transform: scale(1.03);
+        transition: linear 0.2s;
+    }
+}
+
+.led-box i{
+    font-size: 30px;
+}
+
+.red{
+    border: 3px solid rgb(190, 24, 24);
+}
+
+.green{
+    border: 3px solid rgb(57, 190, 24);
+}
+
+.blue{
+    border: 3px solid rgb(41, 24, 190);
+}
+
+#red-on{
+    color: rgb(190, 24, 24);
+}
+
+#green-on{
+    color: rgb(57, 190, 24);
+}
+
+#blue-on{
+    color: rgb(41, 24, 190);
+}
